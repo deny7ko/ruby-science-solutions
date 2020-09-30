@@ -48,4 +48,4 @@ def build_question(survey)
   survey.questions.new(question_params)
 end
 
-
+# Book Solution: https://github.com/thoughtbot/ruby-science/blob/master/example_app/app/controllers/questions_controller.rb#L7
