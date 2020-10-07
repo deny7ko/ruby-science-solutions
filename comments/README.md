@@ -42,3 +42,28 @@ def text_from_ordered_answers
   answers.order(:created_at).pluck(:text)
 end
 ```
+
+### When to add a comment
+
+1. Explain why such decision is made:
+- performance
+- bug complaints with references
+
+2. What vs why
+
+Comment should answer what code can't answer
+
+3. Long name method replaced with comment
+
+```javascript
+const makeSureUserAppearsNewToSubscriptionAPI = (user) => {
+```
+
+```javascript
+// subscription API needs this to be null for v2 users
+if (user.default_name) delete user.default_name;
+```
+
+4. Keep comments short
+
+5. Long comments should be formatted
