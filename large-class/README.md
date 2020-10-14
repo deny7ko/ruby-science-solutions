@@ -10,3 +10,7 @@ How to fix:
 - replace conditionals with polymorphism
 - Extract decorator if class delegates method(?)
 - Replace subclasses with strategies if the large class is base class(?)
+
+### Links
+- https://docs.rubocop.org/rubocop/cops_metrics.html#metricsclasslength
+- https://github.com/troessner/reek/blob/master/docs/Large-Class.md#large-class
