@@ -3,6 +3,8 @@
 When inheritance is not strongly needed(in case you don't have hierarchies) prefer using composition over inheritance.
 It allows to build smaller and reusable classes.
 
+1 level of inheritance is ok to go.
+
 ### Inheritance
 
 ```ruby

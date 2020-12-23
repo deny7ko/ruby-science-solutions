@@ -1,6 +1,7 @@
 ### Law of Demeter
 
 Do not allow to access inner state of another object.
+Decreases the amount of dependencies.
 
 Bad
 ```ruby
@@ -11,7 +12,8 @@ class User
   end
 end
 ```
-GOOD
+
+Good
 ```ruby
 class User
   def discounted_plan_price(discount_code)
