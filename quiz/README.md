@@ -1,10 +1,10 @@
-### 1. Dependency Inversion Principle
-- High level modules should not depend on low level modules. Both should depend on abstractions
-- Abastractions should not depend on details. Details should depend upon absractions.
+## 1. Dependency Inversion Principle
+> - High level modules should not depend on low level modules. Both should depend on abstractions
+> - Abastractions should not depend on details. Details should depend upon absractions.
 
-### Why:
+### Why Good:
 
-> If you push your dependency decision up until they reach the level that contains the information needed to make decisions -> you will prevent changes from affectings several layers.
+If you push your dependency decision up until they reach the level that contains the information needed to make decisions -> you will prevent changes from affectings several layers.
 
 ### Drawbacks
 - more absractions
@@ -15,3 +15,32 @@
 
 - http://rubyblog.pro/2017/07/solid-dependency-inversion-principle
 
+## 2. Open/Closed Principle
+
+> Software entities should be open for extension, but closed for modification.
+
+### Why Good
+
+- When you change the class you can break something. If it is an extension - you will not break anything.
+
+### How
+- Inheritance
+- Decorators with delegation
+- Dependency injection
+
+### Drawbacks
+- difficult to understand
+- can cause extra work
+
+## 3. Composition over inheritance
+
+Prefer composition unless inheritance is strongly needed.
+
+### Why Good
+- Allows to build smaller and reusable classes.
+- Handling hierarchies with inheritance is hard.
+
+### Drawbacks
+- If you really have hierarchies use inheritance
+- Need to instatiate more objects
+- More absract
