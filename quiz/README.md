@@ -44,3 +44,32 @@ Prefer composition unless inheritance is strongly needed.
 - If you really have hierarchies use inheritance
 - Need to instatiate more objects
 - More absract
+
+## 4. Law of Demeter
+
+> Law of multiple dots
+
+Do not entagle a method with another objects' dependencies.
+
+OK if method chain is called on the same type.
+
+### Why good
+- Helps managing dependencies
+
+### How
+- Delegate
+
+## 5. Tell Don't Ask
+
+Tell what should be done rather than quering objects.
+
+### Why good
+- **Encapsulates logic**: encapsulates the condition under which operation can be done
+
+- **Encapsulates state**: when you ask what is the object you create coupling.
+
+- **Minimizes public interface**: you don't need public methods like `has_name?`
+
+### Drawbacks
+
+- Following tell don't ask can cause violations of single responsibility
