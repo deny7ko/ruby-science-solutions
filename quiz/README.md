@@ -11,10 +11,6 @@ If you push your dependency decision up until they reach the level that contains
 - more indirection
 - more difficulty
 
-### Links
-
-- http://rubyblog.pro/2017/07/solid-dependency-inversion-principle
-
 ## 2. Open/Closed Principle
 
 > Software entities should be open for extension, but closed for modification.
