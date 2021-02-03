@@ -73,3 +73,15 @@ Tell what should be done rather than quering objects.
 ### Drawbacks
 
 - Following tell don't ask can cause violations of single responsibility
+
+## 6. DRY
+
+- Don't repeat yourself
+
+### Why good
+
+- Eliminates duplicates knowledge
+
+### Drawbacks
+
+- can lead to unncessary absractions too early
