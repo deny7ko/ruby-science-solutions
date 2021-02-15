@@ -8,7 +8,7 @@
 
 ## 3. Composition over inheritance
 
-Prefer composition unless inheritance is strongly needed.
+`has-a` relationship.
 
 ## 4. Law of Demeter
 
